@@ -1,0 +1,44 @@
+body{
+    background-color: antiquewhite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: auto;
+    
+}
+
+h1{
+    color: darkred;
+    font-style: italic;
+    z-index: 1;
+    font-size: 70px;
+}
+
+h2{
+    font-size: 45px;
+    color: crimson;
+}
+
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .1);
+    margin: 10px;
+    padding: 20px ;
+    overflow: hidden;
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+
+.uno{
+    display: flex;
+}
+
+.due{
+    display: flex;
+}
+
+a:hoover{
+    color: violet;
+}
+
+

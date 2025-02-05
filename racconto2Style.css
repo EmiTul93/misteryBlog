@@ -1,0 +1,46 @@
+body{
+    background-color: antiquewhite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: auto;
+    
+}
+
+.gacy{
+   display: flex;
+}
+
+h2{
+    font-size: 50px;
+    color: red;
+}
+
+p{
+    font-size: 30px;
+    margin: auto;
+}
+
+.jesperson{
+    display: flex;
+ }
+
+ .gaynor{
+    display: flex;
+ }
+ 
+ .manson{
+    display: flex;
+ }
+
+ .lucas{
+    display: flex;
+ }
+
+ footer{
+    display: flex;
+    background-color: brown;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    }
+
+ 
