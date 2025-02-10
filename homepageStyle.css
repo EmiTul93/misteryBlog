@@ -1,44 +1,119 @@
-body{
-    background-color: antiquewhite;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: auto;
-    
-}
-
-h1{
-    color: darkred;
-    font-style: italic;
-    z-index: 1;
-    font-size: 70px;
-}
-
-h2{
-    font-size: 45px;
-    color: crimson;
-}
-
-p{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: black;
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, .1);
-    margin: 10px;
-    padding: 20px ;
-    overflow: hidden;
-    font-size: 30px;
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
     font-weight: bold;
-    
-}
-
-.uno{
+    font-size: 2.5rem;
+    background-color: #800000; /* Rosso amaranto */
+    padding: 10px 0;
+    color: white;
+  }
+  
+  /* Navbar */
+  nav {
+    position: absolute;
+    top: 100; /* Sposta la navbar esattamente sotto l'header */
+    left: 0;
+    width: 100%;
+    background-color: #333;
     display: flex;
-}
+    justify-content: center;
+    padding: 10px 0;
+    z-index: 10; /* Assicura che la navbar sia sopra gli altri elementi */
+  }
+  
+  
+  nav a {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+  }
+  
+  nav a:hover {
+    background-color: #800000;
+    border-radius: 10px;
+  }
+  
+  /* Section */
 
-.due{
+  
+  section{
+    position: relative;
     display: flex;
-}
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  article {
+    width: 45%;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-align: right;
+    z-index: 1;
+  }
+  
+  article h2 {
+    margin-bottom: 20px;
+    font-style: italic;
+    padding: 0 30px 0 0;
+  }
+  
+  button a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  button {
+    background-color: #800000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #bebaba;
+  }
 
-a:hoover{
-    color: violet;
-}
+  button a:hover{
+    color: #800000;
+    text-decoration: 0 0 0 0.5 #ee1111;
+  }
+  
+  /* Background image with animation */
+  section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(img/background\ home.png) no-repeat center center/cover;
+    z-index: -1;
+    opacity: 1;
+    animation: fadeIn 5s ease-in-out forwards;
+  }
 
-
+  
+  @keyframes fadeIn{
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
