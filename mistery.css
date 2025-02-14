@@ -1,0 +1,71 @@
+body {
+    background-color: #3d3838; /* Black background for horror theme */
+    color: #FFFFFF; /* White text color for contrast */
+    font-family: 'Creepster', cursive; /* Horror-themed font */
+    margin: 0;
+    padding: 0;
+}
+
+/*------------ Header Section------------*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #5c5555; /* Dark grey background for header */
+    border-bottom: 2px solid #141414; /* Darker border for header */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header nav {
+    margin: 0;
+}
+
+/*------------ Section body-------------*/
+
+.story, .top, .video {
+    padding: 20px;
+    background-color: #000000; /* Dark grey background for sections */
+    margin: 10px 0;
+    border-radius: 50px;
+    width: 40%;
+}
+
+.top{
+    left: 10%;
+}
+
+img {
+    max-height: 25vh; /* Images take up to 25% of the viewport height */
+    width: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the images */
+}
+
+.title{
+    text-align: center;
+    font-size: large;
+}
+
+.content {
+    display: flex;            /* Imposta il contenitore come Flexbox */
+    align-items: center;      /* Allinea verticalmente al centro */
+    gap: 20px;                /* Spazio tra l'immagine e il testo */
+    padding: 20px;
+  }
+  
+  .content img {
+    width: 40%;           /* L'immagine occupa il 40% dello spazio disponibile */
+    height: auto;             /* Mantiene le proporzioni dell'immagine */
+    border-radius: 8px;       /* Arrotonda gli angoli dell'immagine (opzionale) */
+  }
+  
+  .content .incipit {
+    flex: 1;                  /* Il div incipit occupa lo spazio rimanente */
+    font-size: 18px;          /* Dimensione del testo */
+    padding: 20px;
+  }
