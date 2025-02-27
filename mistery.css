@@ -8,6 +8,7 @@ body {
 
 /*------------ Header Section------------*/
 header {
+    height: 2vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,34 +17,92 @@ header {
     border-bottom: 2px solid #141414; /* Darker border for header */
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2em;
+
+.title-header {
+    position: absolute;
+    top: auto; /*posiziona il titolo al centro*/
+    left: 50px; /* Sposta il titolo a sinistra */
 }
 
-header nav {
-    margin: 0;
+.title-header h1 {
+    font-family: 'Creepster', cursive; /* Font horror */
+    font-size: 35px; /* Dimensione del font */
+    text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.7); /* Ombra rossa per effetto horror */
 }
 
+nav {
+    position: absolute; /* Posiziona il nav in modo assoluto */
+    top: auto;
+    right: 40px; /* Sposta il nav a destra */
+}
+
+nav a {
+    color: #fff; /* Colore del testo */
+    text-decoration: none; /* Rimuove la sottolineatura */
+    margin-left: 25px; /* Spazio tra i link */
+    position: relative; /* Necessario per l'effetto neon */
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Posizione dell'effetto neon */
+    width: 100%;
+    height: 2px; /* Spessore dell'effetto neon */
+    background: rgba(255, 0, 0, 0.7); /* Colore dell'effetto neon */
+    transform: scaleX(0); /* Inizialmente non visibile */
+    transition: transform 0.3s ease; /* Transizione per l'effetto */
+}
+
+nav a:hover::after {
+    transform: scaleX(1); /* Mostra l'effetto al passaggio del mouse */
+}
+
+nav a:hover {
+    color: rgba(255, 0, 0, 1); /* Cambia colore al passaggio del mouse */
+    text-shadow: 0 0 5px rgba(255, 0, 0, 1), 0 0 10px rgba(255, 0, 0, 1); /* Effetto neon */
+}
 /*------------ Section body-------------*/
 
-.story, .top, .video {
-    padding: 20px;
-    background-color: #000000; /* Dark grey background for sections */
-    margin: 10px 0;
-    border-radius: 50px;
-    width: 40%;
+.hero {
+    display: flex;
+    flex-direction: column; /* Disposizione verticale */
+    align-items: center; /* Centra gli elementi orizzontalmente */
+    margin-top: 20px; /* Spazio sopra la sezione hero */
 }
 
-.top{
-    left: 10%;
+.story, .top, .video {
+    background-color: rgba(255, 0, 0, 0.1); /* Sfondo rosso traslucido */
+    border-radius: 15px; /* Angoli arrotondati */
+    padding: 20px; /* Padding interno */
+    margin: 20px; /* Margine esterno */
+    width: 80%; /* Larghezza del contenitore */
+    max-width: 800px; /* Larghezza massima */
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); /* Ombra per effetto 3D */
+    display: flex; /* Abilita flexbox per il contenuto */
+    flex-direction: column; /* Disposizione verticale */
+    align-items: center; /* Centra gli elementi orizzontalmente */
 }
+
+.story {
+    align-self: flex-start; /* Posiziona "story" a sinistra */
+}
+
+.top {
+    align-self: flex-end; /* Posiziona "top" a destra */
+}
+
+.video {
+    align-self: flex-start; /* Posiziona "video" a sinistra */
+}
+
 
 img {
-    max-height: 25vh; /* Images take up to 25% of the viewport height */
-    width: auto; /* Maintain aspect ratio */
+    max-height: 25vh; /* Le immagini occupano fino al 25% dell'altezza della viewport */
+    width: auto; /* Mantiene le proporzioni */
     display: block;
-    margin: 0 auto; /* Center the images */
+    margin: 0 auto; /* Centra le immagini*/
 }
 
 .title{
