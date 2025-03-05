@@ -96,12 +96,11 @@ h1 {
 }
 
 .story, .video{
-    margin-bottom: 20px; /* Spazio tra le sezioni */
-    margin-left: 100px;
+    margin: 20px 20px 20px 10%;
 }
 
 .top{
-    margin: 20px 100px 20px 20px;
+    margin: 20px 10% 20px 20px;
 }
 
 .story a,
