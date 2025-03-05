@@ -82,28 +82,26 @@ h1 {
 .story,
 .top,
 .video {
-    background-color: rgb(73, 73, 73);
-    /* Sfondo rosso traslucido */
-    border-radius: 15px;
-    /* Angoli arrotondati */
-    padding: 20px;
-    /* Padding interno */
-    margin: 20px;
-    /* Margine esterno */
-    width: 80%;
-    /* Larghezza del contenitore */
-    max-width: 800px;
-    /* Larghezza massima */
-    box-shadow: 0 0 20px red;
-    border: 2px solid red;
-    /* Ombra per effetto 3D */
-    display: flex;
-    /* Abilita flexbox per il contenuto */
-    flex-direction: column;
-    /* Disposizione verticale */
-    align-items: center;
-    /* Centra gli elementi orizzontalmente */
+    background-color: rgb(73, 73, 73);  /* Sfondo rosso traslucido */
+    border-radius: 15px; /* Angoli arrotondati */
+    padding: 20px; /* Padding interno */
+    width: 80%; /* Larghezza del contenitore */
+    max-width: 800px; /* Larghezza massima */
+    box-shadow: 0 0 20px red;/* Ombra per effetto 3D */
+    border: 2px solid red;  
+    display: flex; /* Abilita flexbox per il contenuto */
+    flex-direction: column; /* Disposizione verticale */
+    align-items: center; /* Centra gli elementi orizzontalmente */
     color: white;
+}
+
+.story, .video{
+    margin-bottom: 20px; /* Spazio tra le sezioni */
+    margin-left: 100px;
+}
+
+.top{
+    margin: 20px 100px 20px 20px;
 }
 
 .story a,

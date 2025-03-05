@@ -151,7 +151,6 @@ h1 {
     flex-direction: column;
     gap: 20px;
     overflow-y: auto;
-    max-height: 500px;
     padding: 10px;
 }
 
