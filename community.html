@@ -7,13 +7,64 @@
     <link rel="stylesheet" href="community.css">
 </head>
 <body>
- <!-- nav -->
- <nav>
-    <a href="homepage.html">Home</a>
-    <a href="community.html">Community</a>
-    <a href="contact.html">Contact</a>
-</nav>
+    <!-- nav -->
+    <nav>
+        <a href="homepage.html">Home</a>
+        <a href="community.html">Community</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
+    <!-- Community Section -->
+    <section class="community">
+        <h1>Dark Community</h1>
+        
+        <!-- Search and Filter -->
+        <div class="search-filter">
+            <div class="search-container">
+                <input type="text" id="searchBar" placeholder="Cerca una storia...">
+                <button id="searchButton">Cerca</button>
+            </div>
+            <button id="menuButton">☰</button>
+        </div>
+
+        <!-- Finestra del Filtro -->
+        <div id="filterModal" class="filter-modal">
+            <div class="filter-content">
+                <span id="closeModal" class="close-button">&times;</span>
+                <h2>Filtri</h2>
+                <label><input type="checkbox" value="popular"> Più Popolari</label><br>
+                <label><input type="checkbox" value="keyword"> Per Parola Chiave</label><br>
+                <label><input type="checkbox" value="latest"> Ultime Uscite</label><br>
+                <button id="filterButton">Filtra</button>
+            </div>
+        </div>
+
+        <!-- Stories Feed -->
+        <div class="stories-feed">
+            <div class="story">
+                <img src="img/scary-house.jpg" alt="" class="story-image">
+                <div class="story-content">
+                    <h3>La Casa Senza Ombre</h3>
+                    <p>Una vecchia dimora abbandonata, ma ogni notte si vedono ombre muoversi nelle finestre...</p>
+                </div>
+            </div>
+            <div class="story">
+                <img src="img/alexandra-gorn-smuS_jUZa9I-unsplash.jpg" alt="" class="story-image">
+                <div class="story-content">
+                    <h3>L'Ultimo Sussurro</h3>
+                    <p>Un sussurro che ti chiama per nome nel cuore della notte... e nessuno è nella stanza. <a href="racconto1.html">continua...</a></p>
+                </div>
+            </div>
+            <div class="story">
+                <img src="img/door.webp" alt="" class="story-image">
+                <div class="story-content">
+                    <h3>La Porta Chiusa</h3>
+                    <p>Una porta che non si apre mai... fino a quando una notte la trovi socchiusa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="communityScript.js"></script>
 </body>
-<!-- footer -->
 </html>

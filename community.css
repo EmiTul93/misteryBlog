@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+body {
+    background-color: #000;
+    color: #c0392b;
+    font-family: 'Creepster', cursive;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+nav {
+    background: #111;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 0 20px red;
+}
+
+nav a {
+    color: #c0392b;
+    text-decoration: none;
+    font-size: 35px;
+    margin: 0 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: white;
+    text-shadow: 0 0 10px red;
+}
+
+.community {
+    width: 90%;
+    margin: 20px auto;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+}
+
+h1 {
+    color: white;
+    font-size: 100px;
+    text-shadow: 0 0 10px red;
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
+.search-filter {
+    display: flex;
+    align-items: center;
+    /* Allinea verticalmente gli elementi */
+    justify-content: space-between;
+    /* Spazia gli elementi in modo uniforme */
+    margin-bottom: 20px;
+}
+
+.search-container {
+    display: flex;
+    flex: 2;
+    /* Occupa 2/3 dello spazio disponibile */
+    gap: 10px;
+    /* Distanza tra le colonne */
+    align-items: center;
+}
+
+#searchBar {
+    flex: 1;
+    /* Occupa tutto lo spazio disponibile */
+    padding: 10px;
+    background: #222;
+    border: 1px solid red;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px 0 0 5px;
+    /* Rendi gli angoli sinistri arrotondati */
+}
+
+#searchButton {
+    width: 80px;
+    /* Larghezza del pulsante */
+    height: 37.3px;
+    /* Altezza del pulsante */
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 12px 0 5px;
+}
+
+#searchButton:hover {
+    background: darkred;
+}
+
+#menuButton {
+    flex: 0.03;
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#menuButton:hover {
+    background: darkred;
+}
+
+/* Finestra del filtro */
+.filter-modal {
+    display: none;
+    /* Nascondi la finestra di filtro di default */
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Sfondo scuro con trasparenza */
+}
+
+.filter-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    /* Larghezza della finestra */
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px red;
+}
+
+.close-button {
+    color: white;
+    float: right;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: red;
+}
+
+/* Feed delle storie */
+.stories-feed {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto;
+    max-height: 500px;
+    padding: 10px;
+}
+
+.story {
+    background: #111;
+    border: 2px solid red;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.story-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid red;
+}
+
+.story-content {
+    color: white;
+}
+
+.story a {
+    color: red;
+}
+
+.story a:hover {
+    color: white;
+    /* Colore del link al passaggio del mouse */
+    text-shadow: 0 0 10px red;
+}
+
+.story a:visited {
+    color: #c0392b;
+    /* Colore del link visitato (stesso del link normale) */
+}
+
+h3 {
+    color: red;
+    font-size: 22px;
+}
+
+/* Stile per la scrollbar */
+.stories-feed::-webkit-scrollbar {
+    width: 12px;
+    /* Larghezza della scrollbar */
+}
+
+.stories-feed::-webkit-scrollbar-track {
+    background: #222;
+    /* Colore dello sfondo della scrollbar */
+    border-radius: 10px;
+    /* Angoli arrotondati per il track */
+}
+
+.stories-feed::-webkit-scrollbar-thumb {
+    background: red;
+    /* Colore della parte mobile della scrollbar */
+    border-radius: 10px;
+    /* Angoli arrotondati per il thumb */
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    /* Ombra per un effetto horror */
+}
+
+.stories-feed::-webkit-scrollbar-thumb:hover {
+    background: darkred;
+    /* Colore della scrollbar quando si passa sopra */
+}
+
+/* effetto sangue gif */
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: url(img/blood-transparent.gif) repeat-x;
+}
